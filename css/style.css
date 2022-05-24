@@ -1,5 +1,101 @@
+/* COMMON */
 *{
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    vertical-align: middle;
+}
+body{
+    font-family: Arial, sans-serif;
+}
+header{
+    font-family: Helvetica, arial, sans-serif;
+}
+ul{
+    display: flex;
+    list-style-type: none;
+}
+
+/* HEADER */
+
+/* TOP */
+.header-top{
+    background-color: black;
+    position: relative;
+    height: 30px;
+}
+.header-top img{
+    height: 100%;
+    padding: 8px;
+    position: absolute;
+    right: 0;
+    top: 0
+}
+/* BOTTOM */
+.header-bottom{
+    background-color: white;
+    display: flex;
+    position: relative;
+}
+.header-bottom img{
+    margin: 8px;
+}
+.lg_link{
+    display: flex;
+    align-items: center;
+    display: none;
+}
+.lg_link ul li{
+    margin-left: 10px;
+}
+.lg_link ul li img{
+    width: 10px;
+}
+.header-lens{
+    height: 100%;
+    position:absolute;
+    top: 0;
+    right: 0;
+    padding: 10px;
+}
+.header-lens img{
+    width: 25px;
+    display: none;
+}
+.header-lens i{
+    font-size: 30px;
+    padding: 5px 8px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    color: gray;
+}
+.lg_btn{
+    width: 27%;
+    position: relative;
+    display: none;
+}
+.lg_btn-content{
+    position: absolute;
+    right: 0;
+}
+.lg_btn-content img{
+    width: 10px;
+}
+.my_btn{
+    border-radius: 30px
+}
+
+@media screen and (min-width: 992px) {
+    .header-lens img{
+        display: block;
+    }
+    .header-lens i{
+        display: none;
+    }
+    .lg_link{
+        display: block;
+    }
+    .lg_btn{
+        display: block;
+    }
 }
