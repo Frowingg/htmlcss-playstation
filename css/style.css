@@ -166,7 +166,9 @@ ul{
 }
 
 /* PS5 */
-
+#PS5{
+    margin-bottom: 30px;
+}
 /* TITLE */
 #PS5-title *{
     text-align: center;
@@ -199,6 +201,16 @@ ul{
 }
 #PS5-img-selected{
     border-bottom: 2px solid blue;
+}
+
+/* CALL ACTION 2 */
+.call-to-action-buy-2{
+
+    height: 450px;
+    background-image: url(../img/it-takes-two-hero-banner-desktop.jpg);
+}
+.call-to-action-buy-2 h2{
+    font-size: 26px;
 }
 
 @media screen and (min-width: 992px) {
