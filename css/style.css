@@ -10,7 +10,6 @@ body{
 }
 header{
     font-family: Helvetica, arial, sans-serif;
-    border-bottom: 1px solid black;
     position: fixed;
     width: 100%;
 }
@@ -162,7 +161,6 @@ ul{
 .card-1 img{
     width: 100%;
     border-radius: 15px;
-
 }
 
 /* PS5 */
@@ -212,7 +210,69 @@ ul{
 .call-to-action-buy-2 h2{
     font-size: 26px;
 }
+#nuove-uscite-title h2{
+    font-size: 30px;
+}
+#nuove-uscite-title p{
+    font-size: 18px;
+}
+/* NUOVE USCITE */
+#nuove-uscite{
+    background-color: #1f1f1f;
+    color: white;
+    padding: 20px 0 50px;
+}
+.nuove-uscite-img img{
+    width: 100%;
+    border-radius: 20px;
+}
+/* PS4 */
+#PS4{
+    padding: 50px 0;
+}#PS4-title{
+    text-align: center;
+}
+#PS4-title p{
+    color: gray;
+}
+.my_card img{
+    width: 100%;
+}
+.my_card p{
+    color: gray;
+    font-size: 14px;
+}
+.my_card .my_btn-PS4{
+    border-radius: 20px;
+}
 
+/* BANNER 1 */
+.banner{
+    background-color: #bebcbb;
+    padding: 50px 0;
+}
+.banner img{
+    width: 60%;
+}
+.banner p{
+    margin: 30px 0;
+}
+.banner-btn{
+    background-color: #d9dadc;
+    border: none;
+    color: blue;
+    border-radius: 25px;
+}
+.banner-right-content{
+    display: none;
+}
+.banner-right-content img{
+    height: 100%;
+    width: 90%;
+}
+.banner .my_container{
+    display: flex;
+}
 @media screen and (min-width: 992px) {
     .header-lens img{
         display: block;
@@ -224,6 +284,9 @@ ul{
         display: block;
     }
     .lg_btn{
+        display: block;
+    }
+    .banner-right-content{
         display: block;
     }
 }
