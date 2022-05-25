@@ -204,12 +204,17 @@ main{
 
 /* CONTENT */
 #PS5-content .my_btn-PS5{
-    width: 150px;
-    font-size: 13px;
-    border-radius: 15px;
+    width: 200px;
+    border-radius: 25px;
 }
 #PS5 img{
     width: 100%;
+}
+.PS5-img h3{
+    display: none;
+}
+.PS5-img-not-selected{
+    filter: opacity(0.6);
 }
 #PS5-img-selected{
     border-bottom: 2px solid blue;
@@ -217,8 +222,7 @@ main{
 
 /* CALL ACTION 2 */
 .call-to-action-buy-2{
-
-    height: 450px;
+    height: 540px;
     background-image: url(../img/it-takes-two-hero-banner-desktop.jpg);
 }
 .call-to-action-buy-2 h2{
@@ -364,7 +368,20 @@ footer a{
     }
 }
 
-
+@media screen and (min-width: 768px) {
+    /* PS5 */
+    #PS5 img{
+        padding: 20px
+    }
+    .PS5-img h3{
+        display: block;
+        font-size: 16px;
+        text-align: center;
+    }
+    #PS5-img-selected{
+        height: 100%;
+    }
+}
 
 @media screen and (min-width: 992px) {
     /* HEADER */
@@ -390,6 +407,7 @@ footer a{
     .call-to-action-buy p{
         max-width: 420px;
     }
+
     /* BANNER PS PLUS  */
     .banner-right-content{
         display: block;
@@ -401,4 +419,12 @@ footer a{
         line-height: 40px;
     }
 
+}
+
+@media screen and (min-width: 1200px) {
+    /* PS5 */
+    #PS5-content{
+        position: relative;
+        top: 35%;
+    }
 }
