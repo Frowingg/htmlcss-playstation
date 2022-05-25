@@ -352,8 +352,11 @@ footer a{
 @media screen and (min-width: 576px) {
     /* MAIN */
     /* CALL TO ACTION BUY */
-    section.call-to-action-buy{
+    .call-to-action-buy{
         padding: 0 30px 50px;
+    }
+    .call-to-action-buy p{
+        max-width: 691px;
     }
 }
 
@@ -379,6 +382,10 @@ footer a{
         display: block;
     }
     /* MAIN */
+    /* CALL TO ACTION BUY */
+    .call-to-action-buy p{
+        max-width: 420px;
+    }
     /* BANNER PS PLUS  */
     .banner-right-content{
         display: block;
