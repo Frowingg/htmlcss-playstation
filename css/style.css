@@ -117,7 +117,10 @@ ul{
     border-radius: 30px
 }
 
-
+/* MAIN */
+main{
+    padding-top: 100px;
+}
 /* BUY */
 .call-to-action-buy{
     padding-bottom: 50px;
@@ -166,7 +169,6 @@ ul{
 /* CARD-1 */
 .card-1{
     padding: 30px 0 80px;
-    border-bottom: 1px solid black;
 }
 .card-1 img{
     width: 100%;
