@@ -246,7 +246,7 @@ ul{
     border-radius: 20px;
 }
 
-/* BANNER 1 */
+/* BANNER PS PLUS */
 .banner{
     background-color: #bebcbb;
     padding: 50px 0;
@@ -273,6 +273,25 @@ ul{
 .banner .my_container{
     display: flex;
 }
+
+/* SCONTI */
+#sconti{
+    padding: 50px 0;
+}
+.sconti-img img{
+    width: 100%;
+    margin: 20px 0;
+}
+
+/* BANNER PS NOW */
+.PSNOW{
+    background-color: #161c3b;
+    color: white;
+}
+.Now-btn{
+    color: black;
+}
+
 @media screen and (min-width: 992px) {
     .header-lens img{
         display: block;
