@@ -130,7 +130,7 @@ main{
     padding-top: 100px;
     width: 100%;
     padding: 0 10px 40px;
-    height: 700px;
+    /* height: 700px; */
 
     /* bg - img */
     background-image: url(../img/jumbo-bg.png);
@@ -222,11 +222,11 @@ main{
 
 /* CALL ACTION 2 */
 .call-to-action-buy-2{
-    height: 540px;
+    padding-top: 50px;
     background-image: url(../img/it-takes-two-hero-banner-desktop.jpg);
 }
 .call-to-action-buy-2 h2{
-    font-size: 26px;
+    font-size: 36px;
 }
 #nuove-uscite-title h2{
     font-size: 30px;
@@ -361,7 +361,7 @@ footer a{
     /* MAIN */
     /* CALL TO ACTION BUY */
     .call-to-action-buy{
-        padding: 0 30px 50px;
+        padding: 50px 30px 50px;
     }
     .call-to-action-buy p{
         max-width: 691px;
@@ -405,6 +405,9 @@ footer a{
     /* MAIN */
     /* CALL TO ACTION BUY */
     .call-to-action-buy p{
+        max-width: 420px;
+    }
+    .call-to-action-buy h2{
         max-width: 420px;
     }
 
