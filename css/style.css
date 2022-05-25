@@ -20,8 +20,11 @@ ul{
 }
 .my_container{
     width: 96%;
-    background-color: red;
     margin:  0 auto;
+}
+.my_container_footer{
+    width: 96%;
+    margin:  0 auto;  
 }
 
 /* HEADER */
@@ -30,22 +33,31 @@ ul{
 .header-top{
     background-color: black;
     position: relative;
-    height: 30px;
+    height: 35px;
 }
 .header-top img{
     height: 100%;
-    padding: 8px;
+    padding: 10px;
     position: absolute;
     right: 0;
     top: 0
 }
 /* BOTTOM */
-.header-bottom{
-    background-color: white;
+.my_container_header{
     display: flex;
     position: relative;
     justify-content: space-between;
-    height: 60px;
+    margin: 0 auto;
+    width: 98%;
+    /* padding: 10px 0 0 8px; */
+}
+.header-bottom{
+    width: 100%;
+    background-color: white;
+    height: 65px;
+}
+.header-bottom li{
+    cursor: pointer;
 }
 
 /* HEADER BOTTOM LEFT */
@@ -53,13 +65,10 @@ ul{
     display: flex;
     align-items: center;
 }
-.header-logo{
-
-}
 .lg_link{
     width: 90%;
-    display: flex;
-    align-items: center;
+    /* display: flex; */
+    /* align-items: center; */
     display: none;
 }
 .lg_link ul li{
@@ -72,25 +81,28 @@ ul{
 /* HEADER BOTTOM RIGHT */
 .header-right{
     display: flex;
-    align-items: center;
+    /* align-items: center; */
 }
 /* LENS */
 .header-lens{
     height: 100%;
     padding: 10px;
+    cursor: pointer;
 }
 .header-lens img{
     width: 25px;
     display: none;
+
 }
 .header-lens i{
-    font-size: 30px;
-    padding: 5px 8px;
-    border: 1px solid gray;
+    font-size: 27px;
+    padding: 7px 15px;
+    border: 1px solid #e5e5e5;
     border-radius: 5px;
-    color: gray;
+    color: #737373;;
 }
 /* BUTTON-LINK */
+
 .lg_btn{
     position: relative;
     display: none;
@@ -115,37 +127,35 @@ ul{
     padding-top: 100px;
     width: 100%;
     padding: 0 10px 40px;
+    height: 700px;
 
-
-    /* img */
+    /* bg - img */
     background-image: url(../img/jumbo-bg.png);
     background-size: cover;
     background-position: top;
     background-position-y:bottom;
-
-
-    /* test */
-    height: 500px;
 }
 .call-to-action-buy h2{
-    font-size: 30px;
+    font-size: 40px;
+    font-weight: 500;
     margin-bottom: 20px
 }
 .call-to-action-buy  img{
-    width: 200px;
+    width: 270px;
     padding-bottom: 25px;
     /* height: 50px; */
 }
 .call-to-action-buy p{
-    font-size: 13px;
-    max-width: 400px;
+    font-size: 17px;
+    max-width: 550px;
+    margin-bottom: 40px;
 }
 .call-to-action-buy .my_btn-buy{
     border-radius: 30px;
     background-color: #cd3d0f;
     border-color: #cd3d0f;
-    width: 100px;
-    font-size: 12px;
+    width: 120px;
+    font-size: 15px;
 }
 .call-to-action-buy *{
     color: white;
@@ -330,7 +340,6 @@ footer a{
     color: white;
 }
 .footer-center-content{
-    border: 2px solid blue ;
     padding-left: 40px;
 }
 .footer-bottom-content{
@@ -340,21 +349,45 @@ footer a{
     width: 200px;
     
 }
+@media screen and (min-width: 576px) {
+    /* MAIN */
+    /* CALL TO ACTION BUY */
+    section.call-to-action-buy{
+        padding: 0 30px 50px;
+    }
+}
+
+
 
 @media screen and (min-width: 992px) {
+    /* HEADER */
+    .my_container_header{
+        padding: 10px 0 0 8px;
+    }
+    /* right header */
     .header-lens img{
         display: block;
     }
     .header-lens i{
         display: none;
     }
+    /* left header */
     .lg_link{
         display: block;
     }
     .lg_btn{
         display: block;
     }
+    /* MAIN */
+    /* BANNER PS PLUS  */
     .banner-right-content{
         display: block;
     }
+    .lg_link ul li{
+        line-height: 30px;
+    }
+    .lg_btn li{
+        line-height: 40px;
+    }
+
 }
