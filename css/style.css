@@ -229,10 +229,11 @@ main{
     font-size: 36px;
 }
 #nuove-uscite-title h2{
-    font-size: 30px;
+    font-size: 32px;
+    margin-bottom: 20px;
 }
 #nuove-uscite-title p{
-    font-size: 18px;
+    font-size: 24px;
 }
 /* NUOVE USCITE */
 #nuove-uscite{
@@ -243,6 +244,7 @@ main{
 .nuove-uscite-img img{
     width: 100%;
     border-radius: 20px;
+    margin-bottom: 10px;
 }
 /* PS4 */
 #PS4{
