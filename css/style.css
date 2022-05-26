@@ -353,24 +353,26 @@ footer{
     margin-bottom: 40px;
 }
 .footer-logo img{
-    width: 150px;
+    width: 100px;
+    margin-bottom: 30px;
 }
 .footer-language-area img{
-    width: 30px;
+    width: 20px;
+    margin-right: 10px;
 }
 footer ul{
     display: flex;
     flex-direction: column;
 }
 footer li{
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 footer a{
     text-decoration: none;
     color: white;
 }
 .footer-center-content{
-    padding-left: 40px;
+    /* padding-left: 40px; */
 }
 .footer-bottom-content{
     padding: 40px 0 20px;
@@ -387,6 +389,10 @@ footer a{
     }
     .call-to-action-buy p{
         max-width: 691px;
+    }
+    /* FOOTER */
+    .footer-content{
+        margin-left: 15px;
     }
 }
 
@@ -467,8 +473,10 @@ footer a{
     /* SOCIAL MEDIA */
     #social-media .container{
         width: 50%;
-        margin: 0 auto;
-
-        
+        margin: 0 auto;        
+    }
+    /* FOOTER */
+    .footer-bottom-content{
+        max-width: 50%;
     }
 }
