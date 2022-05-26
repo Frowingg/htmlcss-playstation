@@ -306,6 +306,15 @@ main{
 /* SCONTI */
 #sconti{
     padding: 50px 0;
+    text-align: center;
+}
+#sconti h2{
+    font-size:40px;
+    margin-bottom: 30px;
+}
+#sconti p{
+    font-size:21px;
+    color: gray;
 }
 .sconti-img img{
     width: 100%;
