@@ -248,19 +248,28 @@ main{
 }
 /* PS4 */
 #PS4{
-    padding: 50px 0;
-}#PS4-title{
+    padding: 70px 0 100px;
+}
+#PS4-title{
     text-align: center;
+}
+#PS4-title h2{
+    font-size: 40px;
 }
 #PS4-title p{
     color: gray;
+    font-size: 22px;
 }
+
 .my_card img{
     width: 100%;
 }
+.my_card h2{
+    font-size: 35px;
+}
 .my_card p{
     color: gray;
-    font-size: 14px;
+    font-size: 20px;
 }
 .my_card .my_btn-PS4{
     border-radius: 20px;
