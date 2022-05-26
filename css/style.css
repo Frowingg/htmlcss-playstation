@@ -289,7 +289,7 @@ main{
 .banner-btn{
     background-color: #d9dadc;
     border: none;
-    color: blue;
+    color: #167ed2;
     border-radius: 25px;
 }
 .banner-right-content{
@@ -392,6 +392,23 @@ footer a{
     #PS5-img-selected{
         height: 100%;
     }
+
+    /* BANNER PS PLUS  */
+    .banner {
+        padding: 0;
+    }
+    .banner-left-content{
+        margin: 20px 0;
+    }
+    .banner-right-content{
+        display: block;
+        position: relative;
+    }
+    .banner-right-content img{
+        width: 100%;
+        /* height: 100%; */
+
+    }
 }
 
 @media screen and (min-width: 992px) {
@@ -420,11 +437,6 @@ footer a{
     }
     .call-to-action-buy h2{
         max-width: 420px;
-    }
-
-    /* BANNER PS PLUS  */
-    .banner-right-content{
-        display: block;
     }
     .lg_link ul li{
         line-height: 30px;
