@@ -332,10 +332,12 @@ main{
 
 /* SOCIAL MEDIA */
 #social-media{
-    padding: 50px 0;
+    padding: 80px 0;
+    text-align: center;
 }
 #social-media h2{
     margin-bottom: 80px;
+    font-size: 32px;
 }
 #social-media img{
     width: 100%;
@@ -461,5 +463,12 @@ footer a{
     #PS5-content{
         position: relative;
         top: 35%;
+    }
+    /* SOCIAL MEDIA */
+    #social-media .container{
+        width: 50%;
+        margin: 0 auto;
+
+        
     }
 }
