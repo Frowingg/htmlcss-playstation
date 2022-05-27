@@ -6,12 +6,12 @@
 }
 body{
     font-family: Arial, sans-serif;
-    padding-bottom: 100px;
 }
 header{
     font-family: Helvetica, arial, sans-serif;
     position: fixed;
     width: 100%;
+    z-index: 1000;
 }
 ul{
     display: flex;
@@ -28,115 +28,71 @@ ul{
 }
 
 /* HEADER */
-
-/* TOP */
-.header-top{
-    background-color: black;
-    position: relative;
-    height: 35px;
-}
-.header-top img{
-    height: 100%;
-    padding: 10px;
-    position: absolute;
-    right: 0;
-    top: 0
-}
-/* BOTTOM */
-.my_container_header{
-    display: flex;
-    position: relative;
-    justify-content: space-between;
-    margin: 0 auto;
-    width: 98%;
-    /* padding: 10px 0 0 8px; */
-}
-.header-bottom{
+header{
+    position: fixed;
     width: 100%;
-    background-color: white;
-    height: 65px;
+    z-index: 1001;
 }
-.header-bottom li{
-    cursor: pointer;
+#btn-header{
+    border-radius: 25px;
 }
-
-/* HEADER BOTTOM LEFT */
-.header-left{
-    display: flex;
-    align-items: center;
-}
-.lg_link{
-    width: 90%;
-    /* display: flex; */
-    /* align-items: center; */
-    display: none;
-}
-.lg_link ul li{
-    margin-left: 10px;
-    min-width:max-content;
-}
-.lg_link ul li img{
-    width: 10px;
-}
-/* HEADER BOTTOM RIGHT */
-.header-right{
-    display: flex;
-    /* align-items: center; */
-}
-/* LENS */
-.header-lens{
-    height: 100%;
-    padding: 10px;
-    cursor: pointer;
-}
-.header-lens img{
+#lens-header img{
     width: 25px;
-    display: none;
-
+    margin-left: 25px;
+    cursor: pointer;
 }
-.header-lens i{
-    font-size: 27px;
-    padding: 7px 15px;
-    border: 1px solid #e5e5e5;
-    border-radius: 5px;
-    color: #737373;;
+#navbarSupportedContent  ul  li  a{
+    color: black;
 }
-/* BUTTON-LINK */
-
-.lg_btn{
-    position: relative;
-    display: none;
+.dropdown-toggle::after{
+    color: rgba(0,0,0,.55);
 }
-.lg_btn img{
-    width: 10px;
+.dropdown-toggle::after:hover{
+    color: black;
 }
-.lg_btn li{
-    margin-right: 15px;
+.navbar-expand-lg .navbar-nav .dropdown-menu{
+    position: fixed;
+    top: 70px;
+    left: 0;
+    right: 0;
+    border: none;
 }
-.my_btn{
-    border-radius: 30px
+.play-menu-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: fit-content;
+}
+.play-menu-item img{
+    width: 120px;
+}
+.navbar-expand-lg .navbar-nav .play-menu{
+    display: flex;
+    justify-content: center;
+}
+.navbar-expand-lg .navbar-nav .bottom-play-menu ul{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
 }
 
 /* MAIN */
 main{
-    padding-top: 100px;
+    padding-top: 70px;
 }
 /* BUY */
 .call-to-action-buy{
-    padding-bottom: 50px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
     padding-top: 100px;
     width: 100%;
-    padding: 0 10px 40px;
-    /* height: 700px; */
 
     /* bg - img */
     background-image: url(../img/jumbo-bg.png);
     background-size: cover;
     background-position: top;
     background-position-y:bottom;
+}
+.call-to-action-buy .my_container{
+    padding: 0 10px 50px;
 }
 .call-to-action-buy h2{
     font-size: 40px;
@@ -146,7 +102,6 @@ main{
 .call-to-action-buy  img{
     width: 270px;
     padding-bottom: 25px;
-    /* height: 50px; */
 }
 .call-to-action-buy p{
     font-size: 17px;
@@ -156,13 +111,18 @@ main{
 .call-to-action-buy .my_btn-buy{
     border-radius: 30px;
     background-color: #cd3d0f;
-    border-color: #cd3d0f;
+    /* border-color: #cd3d0f; */
+    border: 1px solid #cd3d0f;
     width: 120px;
-    font-size: 15px;
+}
+.call-to-action-buy .my_btn-buy:focus{
+    box-shadow: 0 0 0 .25rem rgba(205,63,15,.5);
+}
+.call-to-action-buy .my_btn-buy:hover{
+    box-shadow: 0 0 0 .25rem rgba(205,63,15,.5);
 }
 .call-to-action-buy *{
     color: white;
-    /* background-color: pink; */
 }
 
 
@@ -173,8 +133,12 @@ main{
 .card-1 img{
     width: 100%;
     border-radius: 15px;
+    cursor: pointer;
 }
-
+#current-img{
+    padding: 3px;
+    border: 2px solid #2586d4;
+}
 /* PS5 */
 #PS5{
     margin-bottom: 30px;
@@ -207,8 +171,12 @@ main{
     width: 200px;
     border-radius: 25px;
 }
+.PS5-img{
+    /* height: 180px; */
+}
 #PS5 img{
     width: 100%;
+    cursor: pointer;
 }
 .PS5-img h3{
     display: none;
@@ -217,6 +185,10 @@ main{
     filter: opacity(0.6);
 }
 #PS5-img-selected{
+    border-bottom: 2px solid blue;
+}
+.PS5-img-not-selected:hover{
+    filter: none;
     border-bottom: 2px solid blue;
 }
 
@@ -245,6 +217,9 @@ main{
     width: 100%;
     border-radius: 20px;
     margin-bottom: 10px;
+}
+.nuove-uscite-img p, .nuove-uscite-img img{
+    cursor: pointer;
 }
 /* PS4 */
 #PS4{
@@ -292,6 +267,19 @@ main{
     color: #167ed2;
     border-radius: 25px;
 }
+.banner-btn:hover{
+    background-color: #d9dadc;
+    box-shadow: 0 0 0 .25rem rgba(245,245,245,.5);
+    border-color: #d9dadc;
+    color: #2586d4;
+}
+.banner-btn:focus{
+    background-color: #d9dadc;
+    border-color: #d9dadc;
+    box-shadow: 0 0 0 .25rem rgba(245,245,245,.5);
+    color: #2586d4;
+
+}
 .banner-right-content{
     display: none;
 }
@@ -320,6 +308,9 @@ main{
     width: 100%;
     margin: 20px 0;
 }
+#sconti p, .sconti-img img{
+    cursor: pointer;
+} 
 
 /* BANNER PS NOW */
 .PSNOW{
@@ -341,6 +332,7 @@ main{
 }
 #social-media img{
     width: 100%;
+    cursor: pointer;
 }
 
 /* FOOTER */
@@ -355,6 +347,9 @@ footer{
 .footer-logo img{
     width: 100px;
     margin-bottom: 30px;
+}
+.footer-language-area{
+    cursor: pointer;
 }
 .footer-language-area img{
     width: 20px;
@@ -371,9 +366,6 @@ footer a{
     text-decoration: none;
     color: white;
 }
-.footer-center-content{
-    /* padding-left: 40px; */
-}
 .footer-bottom-content{
     padding: 40px 0 20px;
 }
@@ -384,9 +376,6 @@ footer a{
 @media screen and (min-width: 576px) {
     /* MAIN */
     /* CALL TO ACTION BUY */
-    .call-to-action-buy{
-        padding: 50px 30px 50px;
-    }
     .call-to-action-buy p{
         max-width: 691px;
     }
@@ -420,11 +409,10 @@ footer a{
     .banner-right-content{
         display: block;
         position: relative;
+        width: 200%;
     }
     .banner-right-content img{
         width: 100%;
-        /* height: 100%; */
-
     }
 }
 
@@ -436,6 +424,7 @@ footer a{
     /* right header */
     .header-lens img{
         display: block;
+
     }
     .header-lens i{
         display: none;
@@ -464,11 +453,24 @@ footer a{
 
 }
 
+@media screen and (max-width: 992px) {
+    .navbar-expand-lg .navbar-nav .dropdown-menu{
+        position: absolute;
+        top: 100%;
+    }
+}
+
 @media screen and (min-width: 1200px) {
     /* PS5 */
     #PS5-content{
         position: relative;
         top: 35%;
+    }
+    /* BANNER PLUS */
+    .banner-right-content{
+        display: block;
+        position: relative;
+        width: 100%;
     }
     /* SOCIAL MEDIA */
     #social-media .container{
