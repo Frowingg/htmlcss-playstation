@@ -78,7 +78,7 @@ header{
 
 /* MAIN */
 main{
-    padding-top: 70px;
+    padding-top: 77px;
 }
 /* BUY */
 .call-to-action-buy{
@@ -88,8 +88,6 @@ main{
     /* bg - img */
     background-image: url(../img/jumbo-bg.png);
     background-size: cover;
-    background-position: top;
-    background-position-y:bottom;
 }
 .call-to-action-buy .my_container{
     padding: 0 10px 50px;
@@ -170,9 +168,6 @@ main{
 #PS5-content .my_btn-PS5{
     width: 200px;
     border-radius: 25px;
-}
-.PS5-img{
-    /* height: 180px; */
 }
 #PS5 img{
     width: 100%;
